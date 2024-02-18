@@ -1,0 +1,91 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container h2{
+    padding: 10px;
+    background-color: coral;
+    font-size: 40px ;
+    text-align: center;
+
+}
+
+.container-text{
+    background-color: cadetblue;
+    margin: 0px;
+   
+}
+
+.container-text li{
+    background-color: pink ;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+    text-align: center;
+    border: 2px solid pink;
+}
+
+.container-text li:hover{
+    background-color: grey;
+}
+
+.container-menu{
+    padding: 1% 5%;
+    background-color: #39a4ac;
+    text-align: justify;
+   
+}
+
+.aside{
+    background-color: cadetblue;
+}
+
+.aside h2{
+    text-align: center;
+}
+
+
+.footer{
+    background-color: black;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col"]{
+    float:left;
+    padding:10px;
+}
+
+.row::after{
+       content: '';
+       clear: both;
+       display: table;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+  
